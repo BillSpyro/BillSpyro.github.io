@@ -1,5 +1,6 @@
 body {
   background: #b5b1b1;
+  margin: 0;
 }
 
 header {
@@ -10,13 +11,44 @@ footer {
   background: #56ca97;
 }
 
-p.AboutLogoText{
-display: inline;
+p.AboutLogoText {
+  display: inline;
 }
 
 img.AboutLogo {
-width: 50px;
-height: 50px;
-border-radius: 8px;
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+}
 
+img.HeaderLogo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  position: absolute;
+  right: 25px;
+  top: 35px;
+}
+
+ul.HeaderLinks {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+li.HeaderLinks {
+  list-style-type: none;
+  margin: 0 2vw;
+  font-size: 3vh
+}
+
+a.HeaderLinks {
+  text-decoration: none;
+  color: black;
+  padding: 2vw;
+  font-family: monospace;
+}
+
+a.HeaderLinks:hover{
+  background-color: #C6E9FF;
 }
