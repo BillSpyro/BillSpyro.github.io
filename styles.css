@@ -1,3 +1,19 @@
+/*
+Border Box
+*/
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/*
+Global for all pages
+*/
+
 body {
   background: #b5b1b1;
   margin: 0;
@@ -11,14 +27,12 @@ footer {
   background: #56ca97;
 }
 
-p.AboutLogoText {
-  display: inline;
-}
+/*
+Header specific
+*/
 
-img.AboutLogo {
-  width: 50px;
-  height: 50px;
-  border-radius: 8px;
+header {
+  padding-top: 20px;
 }
 
 img.HeaderLogo {
@@ -27,28 +41,46 @@ img.HeaderLogo {
   border-radius: 50px;
   position: absolute;
   right: 25px;
-  top: 35px;
+  top: 0px;
 }
 
 ul.HeaderLinks {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   display: flex;
 }
 
-li.HeaderLinks {
+ul.HeaderLinks li{
   list-style-type: none;
-  margin: 0 2vw;
-  font-size: 3vh
+  margin: 0px;
+  font-size: 25px;
+  border-color: black;
+  border: thick double;
+  width: 100%;
+  text-align: center;
 }
 
-a.HeaderLinks {
+ul.HeaderLinks li a {
   text-decoration: none;
   color: black;
-  padding: 2vw;
+  padding:  0px 75px;
   font-family: monospace;
 }
 
-a.HeaderLinks:hover{
+ul.HeaderLinks li a:hover{
   background-color: #C6E9FF;
+}
+
+/*
+About Page specific
+*/
+
+p.AboutLogoText {
+  display: inline;
+}
+
+img.AboutLogo {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
 }
