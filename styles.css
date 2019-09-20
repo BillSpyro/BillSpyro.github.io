@@ -35,22 +35,28 @@ header {
   padding-top: 20px;
 }
 
-img.HeaderLogo {
+header h1 {
+
+text-align: center;
+
+}
+
+header img.HeaderLogo {
   width: 100px;
   height: 100px;
   border-radius: 50px;
   position: absolute;
-  right: 25px;
+  left: 0px;
   top: 0px;
 }
 
-ul.HeaderLinks {
+header ul.HeaderLinks {
   margin: 0px;
   padding: 0px;
   display: flex;
 }
 
-ul.HeaderLinks li{
+header ul.HeaderLinks li{
   list-style-type: none;
   margin: 0px;
   font-size: 25px;
@@ -60,15 +66,33 @@ ul.HeaderLinks li{
   text-align: center;
 }
 
-ul.HeaderLinks li a {
+header ul.HeaderLinks li a {
+  display: inline-block;
   text-decoration: none;
   color: black;
-  padding:  0px 75px;
   font-family: monospace;
+  width: 100%;
 }
 
-ul.HeaderLinks li a:hover{
+header ul.HeaderLinks li a:hover{
   background-color: #C6E9FF;
+}
+
+div.BottomArea {
+
+position: relative;
+height: 150px;
+width: 100%;
+
+}
+
+footer {
+
+  position: fixed;
+      bottom: 0;
+      width: 100%;
+      padding: 0 20px;
+
 }
 
 /*
