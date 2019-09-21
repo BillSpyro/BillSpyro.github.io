@@ -1,7 +1,6 @@
 /*
 Border Box
 */
-
 html {
   box-sizing: border-box;
 }
@@ -13,7 +12,6 @@ html {
 /*
 Global for all pages
 */
-
 body {
   background: #b5b1b1;
   margin: 0;
@@ -30,15 +28,12 @@ footer {
 /*
 Header specific
 */
-
 header {
   padding-top: 20px;
 }
 
 header h1 {
-
-text-align: center;
-
+  text-align: center;
 }
 
 header img.HeaderLogo {
@@ -56,7 +51,7 @@ header ul.HeaderLinks {
   display: flex;
 }
 
-header ul.HeaderLinks li{
+header ul.HeaderLinks li {
   list-style-type: none;
   margin: 0px;
   font-size: 25px;
@@ -74,31 +69,29 @@ header ul.HeaderLinks li a {
   width: 100%;
 }
 
-header ul.HeaderLinks li a:hover{
+header ul.HeaderLinks li a:hover {
   background-color: #C6E9FF;
 }
 
 div.BottomArea {
-
-position: relative;
-height: 150px;
-width: 100%;
-
+  position: relative;
+  height: 150px;
+  width: 100%;
 }
 
+/*
+Footer specific
+*/
 footer {
-
   position: fixed;
-      bottom: 0;
-      width: 100%;
-      padding: 0 20px;
-
+  bottom: 0;
+  width: 100%;
+  padding: 0 20px;
 }
 
 /*
 About Page specific
 */
-
 p.AboutLogoText {
   display: inline;
 }
@@ -107,4 +100,15 @@ img.AboutLogo {
   width: 50px;
   height: 50px;
   border-radius: 8px;
+}
+
+/*
+Blog Page and Portoflio Page specific
+*/
+aside {
+  padding-left: 1rem;
+  margin-left: 1rem;
+  width: 20%;
+  float: right;
+  background-color: #b2bb4f;
 }
