@@ -218,11 +218,15 @@ background-color: #52ff00;
 Blog Page and Portoflio Page specific
 */
 aside {
-  position: fixed;
-  right: 0;
-  padding-left: 1rem;
-  margin-left: 1rem;
-  width: 20%;
+  width: 15%;
   float: right;
   background-color: #b2bb4f;
+}
+
+article.BlogSpecific{
+  width: 85%;
+}
+
+article.PortfolioSpecific{
+  width: 85%;
 }
