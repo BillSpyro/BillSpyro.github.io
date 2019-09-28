@@ -125,58 +125,121 @@ h2 {
 /*
 Home Page specific
 */
-
 h3.HomeSpecific {
-
   text-align: center;
   font-size: 20pt;
-
 }
 
 article.HomeSpecific div.HomeThreeColumn {
-
-display: flex;
-justify-content: space-around;
-
+  display: flex;
+  justify-content: space-around;
 }
 
-article.HomeSpecific section{
-
-border: black solid 1px;
-width: 33.33%;
-background-color: #97d0d2;
-
+article.HomeSpecific section {
+  border: black solid 1px;
+  width: 33.33%;
+  background-color: #97d0d2;
 }
 
-article.HomeSpecific section h3{
-text-align: center;
-font-size: 20pt;
-
+article.HomeSpecific section h3 {
+  text-align: center;
+  font-size: 20pt;
 }
 
-article.HomeSpecific section h3 a{
-
-display: block;
-text-decoration: none;
-background-color: #3fc3c7;
-
+article.HomeSpecific section h3 a {
+  display: block;
+  text-decoration: none;
+  background-color: #3fc3c7;
 }
 
-article.HomeSpecific section p{
-
-text-align: center;
-font-size: 15pt;
-
+article.HomeSpecific section p {
+  text-align: center;
+  font-size: 15pt;
 }
 
 /*
 About Page specific
 */
+article.AboutSpecific p, article.AboutSpecific section li, article.AboutSpecific section h3 {
+  color: white;
+}
+
+article.AboutSpecific section h3 {
+  background-color: black;
+  display: inline;
+  padding: 10px;
+}
+
+article.AboutSpecific section.AboutSocialStuff p {
+  color: black;
+}
+
+h3.AboutSpecific {
+  text-align: center;
+  font-size: 20pt;
+}
+
+article.AboutSpecific div {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+section.AboutHobbiesAndInterests {
+  width: fit-content;
+  margin: 10px;
+  padding: 10px;
+  border: solid 1px red;
+  background-color: #c73f3f;
+}
+
+section.AboutFavorites {
+  width: fit-content;
+  margin: 10px;
+  padding: 10px;
+  border: solid 1px green;
+  background-color: #3fc76f;
+}
+
+section.AboutPolitics {
+  width: fit-content;
+  margin: 10px;
+  padding: 10px;
+  border: solid 1px blue;
+  background-color: #3f49c7;
+}
+
+section.AboutLife {
+  width: fit-content;
+  margin: 10px;
+  padding: 10px;
+  border: solid 1px yellow;
+  background-color: #b8c73f;
+}
+
+section.AboutWork {
+  width: fit-content;
+  margin: 10px;
+  padding: 10px;
+  border: solid 1px orange;
+  background-color: #c7a33f;
+}
+
+section.AboutSchool {
+  width: 50%;
+  margin: 10px;
+  padding: 10px;
+  border: solid 1px green;
+  background-color: #2b5a47;
+}
+
 section.AboutSocialStuff {
-
-border: solid 1px blue;
-background-color: #3fc3c7;
-
+  width: 95%;
+  margin: 10px;
+  padding: 10px;
+  border: solid 1px blue;
+  background-color: #3fc3c7;
 }
 
 p.AboutLogoText {
@@ -208,8 +271,7 @@ ul.AboutLogo li {
 }
 
 ul.AboutLogo li a:hover {
-
-background-color: #52ff00;
+  background-color: #52ff00;
 }
 
 /*
@@ -221,17 +283,15 @@ aside {
   background-color: #b2bb4f;
 }
 
-article.BlogSpecific{
+article.BlogSpecific {
   width: 85%;
 }
 
-article.PortfolioSpecific{
+article.PortfolioSpecific {
   width: 85%;
 }
 
 article.PortfolioSpecific img {
-
-width: 80%;
-margin: auto;
-
+  width: 80%;
+  margin: auto;
 }
