@@ -86,9 +86,7 @@ div.BottomArea {
 Footer specific
 */
 footer {
-  position: fixed;
   bottom: 0;
-  height: 10%;
   width: 100%;
   padding: 0 20px;
 }
@@ -128,14 +126,14 @@ h2 {
 Home Page specific
 */
 
-p.HomeSpecific {
+h3.HomeSpecific {
 
   text-align: center;
   font-size: 20pt;
 
 }
 
-article.HomeSpecific {
+article.HomeSpecific div.HomeThreeColumn {
 
 display: flex;
 justify-content: space-around;
@@ -229,4 +227,11 @@ article.BlogSpecific{
 
 article.PortfolioSpecific{
   width: 85%;
+}
+
+article.PortfolioSpecific img {
+
+width: 80%;
+margin: auto;
+
 }
