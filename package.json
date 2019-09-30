@@ -1,0 +1,21 @@
+{
+  "name": "build-tool-template",
+  "version": "1.0.0",
+  "description": "A directory to practice build tools",
+  "main": "index.html",
+  "scripts": {
+    "start": "gulp",
+    "html": "gulp html",
+    "css": "gulp css",
+    "lint": "gulp lint"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-csslint": "^1.0.1",
+    "gulp-html-linter": "^1.0.0",
+    "gulp-util": "^3.0.8"
+  }
+}

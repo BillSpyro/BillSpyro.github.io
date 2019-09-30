@@ -120,6 +120,7 @@ h2 {
   text-align: center;
   border-bottom: solid 1px black;
   font-size: 25pt;
+  margin-bottom: 0;
 }
 
 /*
@@ -168,6 +169,7 @@ article.AboutSpecific section h3 {
   background-color: black;
   display: inline;
   padding: 10px;
+  border-radius: 4px;
 }
 
 article.AboutSpecific section.AboutSocialStuff p {
@@ -177,6 +179,10 @@ article.AboutSpecific section.AboutSocialStuff p {
 h3.AboutSpecific {
   text-align: center;
   font-size: 20pt;
+  border-bottom: 1px black solid;
+  margin: 0;
+  padding: 10px;
+  background-color: white;
 }
 
 article.AboutSpecific div {
@@ -184,62 +190,70 @@ article.AboutSpecific div {
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
+  background-image: url(about/images/Background.jpg);
 }
 
 section.AboutHobbiesAndInterests {
   width: fit-content;
   margin: 10px;
   padding: 10px;
-  border: solid 1px red;
-  background-color: #c73f3f;
+  border: solid 3px #ff0000;
+  background-color: #862727;
+  border-radius: 14px;
 }
 
 section.AboutFavorites {
   width: fit-content;
   margin: 10px;
   padding: 10px;
-  border: solid 1px green;
+  border: solid 3px #00ff00;
   background-color: #3fc76f;
+  border-radius: 14px;
 }
 
 section.AboutPolitics {
   width: fit-content;
   margin: 10px;
   padding: 10px;
-  border: solid 1px blue;
+  border: solid 3px #00b8ff;
   background-color: #3f49c7;
+  border-radius: 14px;
 }
 
 section.AboutLife {
   width: fit-content;
   margin: 10px;
   padding: 10px;
-  border: solid 1px yellow;
+  border: solid 3px #ffff00;
   background-color: #b8c73f;
+  border-radius: 14px;
 }
 
 section.AboutWork {
   width: fit-content;
   margin: 10px;
   padding: 10px;
-  border: solid 1px orange;
+  border: solid 3px #ffa500;
   background-color: #c7a33f;
+  border-radius: 14px;
 }
 
 section.AboutSchool {
   width: 50%;
   margin: 10px;
   padding: 10px;
-  border: solid 1px green;
+  border: solid 3px #000000;
   background-color: #2b5a47;
+  border-radius: 14px;
 }
 
 section.AboutSocialStuff {
   width: 95%;
   margin: 10px;
   padding: 10px;
-  border: solid 1px blue;
+  border: solid 3px #0000ff;
   background-color: #3fc3c7;
+  border-radius: 14px;
 }
 
 p.AboutLogoText {
