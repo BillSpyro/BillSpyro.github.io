@@ -137,11 +137,13 @@ h3.HomeSpecific {
 article.HomeSpecific div.HomeThreeColumn {
   display: flex;
   justify-content: space-around;
+  padding: 10px;
+  background-image: url(about/images/Background.jpg);
 }
 
 article.HomeSpecific section {
   border: black solid 1px;
-  width: 33.33%;
+  width: 30%;
   background-color: #97d0d2;
 }
 
@@ -159,9 +161,16 @@ article.HomeSpecific section h3 a {
   padding: 10px;
 }
 
+article.HomeSpecific section h3 a:hover{
+
+background-color: #9fd884;
+
+}
+
 article.HomeSpecific section p {
   text-align: center;
   font-size: 15pt;
+  padding: 10px;
 }
 
 /*
@@ -253,7 +262,7 @@ article.AboutSpecific section.AboutSchool {
   border-radius: 14px;
 }
 
- article.AboutSpecific section.AboutSocialStuff {
+article.AboutSpecific section.AboutSocialStuff {
   width: 95%;
   margin: 10px;
   padding: 10px;
@@ -287,23 +296,19 @@ article.AboutSpecific ul.AboutLogo li {
   background-color: #d3ffbe;
   display: flex;
   justify-content: space-around;
-
 }
 
 article.AboutSpecific ul.AboutLogo li p {
-
-padding: 0 5px;
-margin: 0;
-width: 100%;
+  padding: 0 5px;
+  margin: 0;
+  width: 100%;
 }
 
 article.AboutSpecific ul.AboutLogo li a {
-
-padding: 0 5px;
-margin: 0;
-width: 100%;
-text-decoration: none;
-
+  padding: 0 5px;
+  margin: 0;
+  width: 100%;
+  text-decoration: none;
 }
 
 article.AboutSpecific ul.AboutLogo li a:hover {
@@ -314,16 +319,40 @@ article.AboutSpecific ul.AboutLogo li a:hover {
 Blog Page and Portoflio Page Layout
 */
 div.PortfolioLayout, div.BlogLayout {
-
-display: flex;
-justify-content: flex-start;
-flex-direction: row-reverse;
-
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
 }
 
 aside {
   width: 15%;
   background-color: #b2bb4f;
+}
+
+aside ul {
+  padding-left: 15%;
+}
+
+aside ul li a{
+
+border-bottom: solid black 1px;
+
+}
+
+aside ul li a {
+
+text-decoration: none;
+font-size: 14pt;
+color: black;
+display: block;
+padding: 10px 10px 10px 0;
+
+}
+
+aside ul li a:hover {
+
+background-color: #9fd884;
+
 }
 
 article.BlogSpecific, article.PortfolioSpecific {
@@ -333,7 +362,6 @@ article.BlogSpecific, article.PortfolioSpecific {
 /*
 Portfolio specific
 */
-
 h3.PortfolioSpecific {
   text-align: center;
   font-size: 20pt;
@@ -348,23 +376,19 @@ article.PortfolioSpecific img {
 }
 
 article.PortfolioSpecific div.PortfolioHome {
-
-display: flex;
-justify-content: space-around;
-align-content: space-around;
-flex-direction: column;
-background-image: url(about/images/Background.jpg);
-
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-direction: column;
+  background-image: url(about/images/Background.jpg);
 }
 
 article.PortfolioSpecific div.PortfolioHome section {
-
   border: black solid 1px;
   width: 90%;
   background-color: #97d0d2;
   display: flex;
   margin: 10px;
-
 }
 
 article.PortfolioSpecific div.PortfolioHome section h3 {
@@ -382,12 +406,69 @@ article.PortfolioSpecific div.PortfolioHome section h3 a {
   padding: 10px;
 }
 
+article.PortfolioSpecific div.PortfolioHome section h3 a:hover{
+
+background-color: #9fd884;
+
+}
+
 article.PortfolioSpecific div.PortfolioHome section p {
-
-margin: auto;
-
+  margin: auto;
 }
 
 /*
 Blog specific
 */
+h3.BlogSpecific {
+  text-align: center;
+  font-size: 20pt;
+  background-color: white;
+  margin: 0;
+  padding: 10px;
+}
+
+article.BlogSpecific img {
+  width: 90%;
+  margin: auto;
+}
+
+article.BlogSpecific div.BlogHome {
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-direction: column;
+  background-image: url(about/images/Background.jpg);
+}
+
+article.BlogSpecific div.BlogHome section {
+  border: black solid 1px;
+  width: 90%;
+  background-color: #97d0d2;
+  display: flex;
+  margin: 10px;
+}
+
+article.BlogSpecific div.BlogHome section h3 {
+  text-align: center;
+  font-size: 20pt;
+  margin: 0;
+  width: 30%;
+  border-right: black solid 1px;
+}
+
+article.BlogSpecific div.BlogHome section h3 a {
+  display: block;
+  text-decoration: none;
+  background-color: #3fc3c7;
+  padding: 10px;
+}
+
+article.BlogSpecific div.BlogHome section h3 a:hover{
+
+background-color: #9fd884;
+
+}
+
+article.BlogSpecific div.BlogHome section p {
+  margin: auto;
+}
