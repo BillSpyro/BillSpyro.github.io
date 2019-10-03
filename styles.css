@@ -114,7 +114,7 @@ footer ul li {
 }
 
 /*
-h2
+h2 Global
 */
 h2 {
   text-align: center;
@@ -129,6 +129,9 @@ Home Page specific
 h3.HomeSpecific {
   text-align: center;
   font-size: 20pt;
+  background-color: white;
+  margin: 0;
+  padding: 10px;
 }
 
 article.HomeSpecific div.HomeThreeColumn {
@@ -145,12 +148,15 @@ article.HomeSpecific section {
 article.HomeSpecific section h3 {
   text-align: center;
   font-size: 20pt;
+  margin: 0;
+  border-bottom: black solid 1px;
 }
 
 article.HomeSpecific section h3 a {
   display: block;
   text-decoration: none;
   background-color: #3fc3c7;
+  padding: 10px;
 }
 
 article.HomeSpecific section p {
@@ -193,7 +199,7 @@ article.AboutSpecific div {
   background-image: url(about/images/Background.jpg);
 }
 
-section.AboutHobbiesAndInterests {
+article.AboutSpecific section.AboutHobbiesAndInterests {
   width: fit-content;
   margin: 10px;
   padding: 10px;
@@ -202,7 +208,7 @@ section.AboutHobbiesAndInterests {
   border-radius: 14px;
 }
 
-section.AboutFavorites {
+article.AboutSpecific section.AboutFavorites {
   width: fit-content;
   margin: 10px;
   padding: 10px;
@@ -211,7 +217,7 @@ section.AboutFavorites {
   border-radius: 14px;
 }
 
-section.AboutPolitics {
+article.AboutSpecific section.AboutPolitics {
   width: fit-content;
   margin: 10px;
   padding: 10px;
@@ -220,7 +226,7 @@ section.AboutPolitics {
   border-radius: 14px;
 }
 
-section.AboutLife {
+article.AboutSpecific section.AboutLife {
   width: fit-content;
   margin: 10px;
   padding: 10px;
@@ -229,7 +235,7 @@ section.AboutLife {
   border-radius: 14px;
 }
 
-section.AboutWork {
+article.AboutSpecific section.AboutWork {
   width: fit-content;
   margin: 10px;
   padding: 10px;
@@ -238,7 +244,7 @@ section.AboutWork {
   border-radius: 14px;
 }
 
-section.AboutSchool {
+article.AboutSpecific section.AboutSchool {
   width: 50%;
   margin: 10px;
   padding: 10px;
@@ -247,7 +253,7 @@ section.AboutSchool {
   border-radius: 14px;
 }
 
-section.AboutSocialStuff {
+ article.AboutSpecific section.AboutSocialStuff {
   width: 95%;
   margin: 10px;
   padding: 10px;
@@ -256,17 +262,17 @@ section.AboutSocialStuff {
   border-radius: 14px;
 }
 
-p.AboutLogoText {
+article.AboutSpecific p.AboutLogoText {
   display: inline;
 }
 
-img.AboutLogo {
+article.AboutSpecific img.AboutLogo {
   width: 4rem;
   height: 4rem;
   border-radius: 8px;
 }
 
-ul.AboutLogo {
+article.AboutSpecific ul.AboutLogo {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
@@ -274,38 +280,114 @@ ul.AboutLogo {
   padding: 0;
 }
 
-ul.AboutLogo li {
+article.AboutSpecific ul.AboutLogo li {
   margin: 0;
   padding: 0;
   border: solid 3px #9fd884;
   background-color: #d3ffbe;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+
 }
 
-ul.AboutLogo li a:hover {
+article.AboutSpecific ul.AboutLogo li p {
+
+padding: 0 5px;
+margin: 0;
+width: 100%;
+}
+
+article.AboutSpecific ul.AboutLogo li a {
+
+padding: 0 5px;
+margin: 0;
+width: 100%;
+text-decoration: none;
+
+}
+
+article.AboutSpecific ul.AboutLogo li a:hover {
   background-color: #52ff00;
 }
 
 /*
-Blog Page and Portoflio Page specific
+Blog Page and Portoflio Page Layout
 */
+div.PortfolioLayout, div.BlogLayout {
+
+display: flex;
+justify-content: flex-start;
+flex-direction: row-reverse;
+
+}
+
 aside {
   width: 15%;
-  float: right;
   background-color: #b2bb4f;
 }
 
-article.BlogSpecific {
+article.BlogSpecific, article.PortfolioSpecific {
   width: 85%;
 }
 
-article.PortfolioSpecific {
-  width: 85%;
+/*
+Portfolio specific
+*/
+
+h3.PortfolioSpecific {
+  text-align: center;
+  font-size: 20pt;
+  background-color: white;
+  margin: 0;
+  padding: 10px;
 }
 
 article.PortfolioSpecific img {
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
+
+article.PortfolioSpecific div.PortfolioHome {
+
+display: flex;
+justify-content: space-around;
+align-content: space-around;
+flex-direction: column;
+background-image: url(about/images/Background.jpg);
+
+}
+
+article.PortfolioSpecific div.PortfolioHome section {
+
+  border: black solid 1px;
+  width: 90%;
+  background-color: #97d0d2;
+  display: flex;
+  margin: 10px;
+
+}
+
+article.PortfolioSpecific div.PortfolioHome section h3 {
+  text-align: center;
+  font-size: 20pt;
+  margin: 0;
+  width: 30%;
+  border-right: black solid 1px;
+}
+
+article.PortfolioSpecific div.PortfolioHome section h3 a {
+  display: block;
+  text-decoration: none;
+  background-color: #3fc3c7;
+  padding: 10px;
+}
+
+article.PortfolioSpecific div.PortfolioHome section p {
+
+margin: auto;
+
+}
+
+/*
+Blog specific
+*/
