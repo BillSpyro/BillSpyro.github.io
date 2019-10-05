@@ -138,7 +138,7 @@ article.HomeSpecific div.HomeThreeColumn {
   display: flex;
   justify-content: space-around;
   padding: 10px;
-  background-image: url(about/images/Background.jpg);
+  background-image: url(images/Background1.jpg);
 }
 
 article.HomeSpecific section {
@@ -161,10 +161,8 @@ article.HomeSpecific section h3 a {
   padding: 10px;
 }
 
-article.HomeSpecific section h3 a:hover{
-
-background-color: #9fd884;
-
+article.HomeSpecific section h3 a:hover {
+  background-color: #9fd884;
 }
 
 article.HomeSpecific section p {
@@ -205,7 +203,7 @@ article.AboutSpecific div {
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
-  background-image: url(about/images/Background.jpg);
+  background-image: url(images/Background3.jpg);
 }
 
 article.AboutSpecific section.AboutHobbiesAndInterests {
@@ -333,26 +331,20 @@ aside ul {
   padding-left: 15%;
 }
 
-aside ul li a{
-
-border-bottom: solid black 1px;
-
+aside ul li a {
+  border-bottom: solid black 1px;
 }
 
 aside ul li a {
-
-text-decoration: none;
-font-size: 14pt;
-color: black;
-display: block;
-padding: 10px 10px 10px 0;
-
+  text-decoration: none;
+  font-size: 14pt;
+  color: black;
+  display: block;
+  padding: 10px 10px 10px 0;
 }
 
 aside ul li a:hover {
-
-background-color: #9fd884;
-
+  background-color: #9fd884;
 }
 
 article.BlogSpecific, article.PortfolioSpecific {
@@ -366,6 +358,7 @@ h3.PortfolioSpecific {
   text-align: center;
   font-size: 20pt;
   background-color: white;
+  border-bottom: 1px black solid;
   margin: 0;
   padding: 10px;
 }
@@ -380,7 +373,7 @@ article.PortfolioSpecific div.PortfolioHome {
   justify-content: space-around;
   align-content: space-around;
   flex-direction: column;
-  background-image: url(about/images/Background.jpg);
+  background-image: url(images/Background2.jpg);
 }
 
 article.PortfolioSpecific div.PortfolioHome section {
@@ -406,14 +399,70 @@ article.PortfolioSpecific div.PortfolioHome section h3 a {
   padding: 10px;
 }
 
-article.PortfolioSpecific div.PortfolioHome section h3 a:hover{
-
-background-color: #9fd884;
-
+article.PortfolioSpecific div.PortfolioHome section h3 a:hover {
+  background-color: #9fd884;
 }
 
 article.PortfolioSpecific div.PortfolioHome section p {
   margin: auto;
+}
+
+/*
+Portfolio Content
+*/
+article.PortfolioSpecific div.PortfolioContent {
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-direction: column;
+  background-image: url(images/Background2.jpg);
+}
+
+article.PortfolioSpecific div.PortfolioContent div.PortfolioOpening {
+  border: black 1px solid;
+  background: #72ecd0;
+  margin: 10px;
+  padding: 10px;
+}
+
+article.PortfolioSpecific div.PortfolioContent section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: black 1px solid;
+  background: #72ecd0;
+  margin: 10px 30px;
+}
+
+article.PortfolioSpecific div.PortfolioContent section h3 {
+  width: 100%;
+  text-align: center;
+  background-color: #44e089;
+  padding: 10px;
+  margin: 0px 0px 10px 0px;
+}
+
+article.PortfolioSpecific div.PortfolioContent section p {
+  padding: 10px;
+  background-color: #0cfd77;
+  margin: 10px 0px 0px 0px;
+  width: 100%;
+}
+
+article.PortfolioSpecific div.PortfolioContent section img {
+  border: black solid 1px;
+}
+
+article.PortfolioSpecific div.PortfolioContent section ul {
+  padding: 0px;
+}
+
+article.PortfolioSpecific div.PortfolioContent section ul li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
 }
 
 /*
@@ -423,6 +472,7 @@ h3.BlogSpecific {
   text-align: center;
   font-size: 20pt;
   background-color: white;
+  border-bottom: 1px black solid;
   margin: 0;
   padding: 10px;
 }
@@ -437,7 +487,7 @@ article.BlogSpecific div.BlogHome {
   justify-content: space-around;
   align-content: space-around;
   flex-direction: column;
-  background-image: url(about/images/Background.jpg);
+  background-image: url(images/Background4.jpg);
 }
 
 article.BlogSpecific div.BlogHome section {
@@ -463,12 +513,41 @@ article.BlogSpecific div.BlogHome section h3 a {
   padding: 10px;
 }
 
-article.BlogSpecific div.BlogHome section h3 a:hover{
-
-background-color: #9fd884;
-
+article.BlogSpecific div.BlogHome section h3 a:hover {
+  background-color: #9fd884;
 }
 
 article.BlogSpecific div.BlogHome section p {
   margin: auto;
+}
+
+/*
+Blog Content
+*/
+article.BlogSpecific div.BlogContent {
+  display: flex;
+  justify-content: center;
+  background-image: url(images/Background4.jpg);
+}
+
+article.BlogSpecific div.BlogContent section {
+  border: black solid 1px;
+  width: 90%;
+  background-color: #d89c71;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+article.BlogSpecific div.BlogContent section h3 {
+  width: 100%;
+  margin: 0px;
+  padding: 10px;
+  text-align: center;
+  background-color: #d23c2d;
+}
+
+article.BlogSpecific div.BlogContent section p {
+  padding: 10px;
 }
