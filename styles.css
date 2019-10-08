@@ -134,12 +134,15 @@ article.HomeSpecific div.HomeThreeColumn {
   justify-content: space-around;
   padding: 10px;
   background-image: url(images/Background1.jpg);
+  height: 500px;
 }
 
 article.HomeSpecific section {
   border: black solid 1px;
   width: 30%;
   background-color: #97d0d2;
+  display: flex;
+  flex-direction: column;
 }
 
 article.HomeSpecific section h3 {
@@ -164,6 +167,81 @@ article.HomeSpecific section p {
   text-align: center;
   font-size: 15pt;
   padding: 10px;
+}
+
+article.HomeSpecific section div.MagnifyingGlass {
+  font-size: 14em;
+  display: inline-block;
+  width: 0.4em;
+  box-sizing: content-box;
+  height: 0.4em;
+  border: 0.1em solid #3c45af;
+  position: relative;
+  border-radius: 0.35em;
+  align-self: center;
+}
+
+article.HomeSpecific section div.MagnifyingGlass:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: -0.25em;
+  bottom: -0.1em;
+  border-width: 0;
+  background: #3141f9;
+  width: 0.35em;
+  height: 0.08em;
+  transform: rotate(45deg);
+}
+
+article.HomeSpecific section div.Ribbon {
+  position: relative;
+  background: #fbff00;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  align-self: center;
+}
+
+article.HomeSpecific section div.Ribbon:before,
+article.HomeSpecific section div.Ribbon:after {
+  content: '';
+  position: absolute;
+  border-bottom: 70px solid #fbff00;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  top: 70px;
+  left: -10px;
+  transform: rotate(-140deg);
+}
+
+article.HomeSpecific section div.Ribbon:after {
+  left: auto;
+  right: -10px;
+  transform: rotate(140deg);
+}
+
+article.HomeSpecific section div.Bubble {
+  width: 180px;
+  height: 120px;
+  background: white;
+  position: relative;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  align-self: center;
+}
+
+article.HomeSpecific section div.Bubble:before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 26px;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-right: 40px solid white;
+  border-bottom: 20px solid transparent;
 }
 
 /*
