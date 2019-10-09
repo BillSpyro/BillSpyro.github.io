@@ -23,6 +23,8 @@ header {
 
 footer {
   background: #00ff8f;
+  position: sticky;
+  bottom: 0;
 }
 
 /*
@@ -74,12 +76,6 @@ header ul.HeaderLinks li a:hover {
   background-color: #9fd884;
 }
 
-div.BottomArea {
-  position: relative;
-  height: 150px;
-  width: 100%;
-}
-
 /*
 Footer specific
 */
@@ -129,17 +125,24 @@ h3.HomeSpecific {
   padding: 10px;
 }
 
+article.HomeSpecific{
+
+height: 660px;
+
+}
+
 article.HomeSpecific div.HomeThreeColumn {
   display: flex;
   justify-content: space-around;
   padding: 10px;
   background-image: url(images/Background1.jpg);
-  height: 500px;
+  height: 650px;
 }
 
 article.HomeSpecific section {
   border: black solid 1px;
   width: 30%;
+  height: 350px;
   background-color: #97d0d2;
   display: flex;
   flex-direction: column;
@@ -391,7 +394,6 @@ Blog Page and Portoflio Page Layout
 */
 div.PortfolioLayout, div.BlogLayout {
   display: flex;
-  justify-content: flex-start;
   flex-direction: row-reverse;
 }
 
@@ -436,6 +438,11 @@ h3.PortfolioSpecific {
   padding: 10px;
 }
 
+article.PortfolioSpecific {
+
+
+}
+
 article.PortfolioSpecific img {
   width: 90%;
   margin: auto;
@@ -443,10 +450,9 @@ article.PortfolioSpecific img {
 
 article.PortfolioSpecific div.PortfolioHome {
   display: flex;
-  justify-content: space-around;
-  align-content: space-around;
   flex-direction: column;
   background-image: url(images/Background2.jpg);
+  height: 650px;
 }
 
 article.PortfolioSpecific div.PortfolioHome section {
@@ -557,10 +563,9 @@ article.BlogSpecific img {
 
 article.BlogSpecific div.BlogHome {
   display: flex;
-  justify-content: space-around;
-  align-content: space-around;
   flex-direction: column;
   background-image: url(images/Background4.jpg);
+  height: 650px;
 }
 
 article.BlogSpecific div.BlogHome section {
@@ -600,7 +605,9 @@ Blog Content
 article.BlogSpecific div.BlogContent {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   background-image: url(images/Background4.jpg);
+  height: 650px;
 }
 
 article.BlogSpecific div.BlogContent section {
