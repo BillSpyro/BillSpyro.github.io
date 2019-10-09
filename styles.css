@@ -125,10 +125,8 @@ h3.HomeSpecific {
   padding: 10px;
 }
 
-article.HomeSpecific{
-
-height: 660px;
-
+article.HomeSpecific {
+  height: 660px;
 }
 
 article.HomeSpecific div.HomeThreeColumn {
@@ -438,10 +436,7 @@ h3.PortfolioSpecific {
   padding: 10px;
 }
 
-article.PortfolioSpecific {
-
-
-}
+article.PortfolioSpecific {}
 
 article.PortfolioSpecific img {
   width: 90%;
@@ -630,4 +625,104 @@ article.BlogSpecific div.BlogContent section h3 {
 
 article.BlogSpecific div.BlogContent section p {
   padding: 10px;
+}
+
+/*
+Media Queries
+*/
+@media screen and (max-width: 900px) {
+  header ul.HeaderLinks {
+    flex-direction: column;
+  }
+
+  header ul.HeaderLinks li {
+    width: 100%;
+  }
+
+  article.HomeSpecific {
+    height: auto;
+  }
+
+  article.HomeSpecific div.HomeThreeColumn {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+
+  article.HomeSpecific div.HomeThreeColumn section {
+    width: 90%;
+    margin: 10px;
+  }
+
+  article.AboutSpecific div {
+    flex-direction: column;
+  }
+
+  article.AboutSpecific section.AboutSchool,
+  article.AboutSpecific section.AboutWork,
+  article.AboutSpecific section.AboutLife,
+  article.AboutSpecific section.AboutPolitics,
+  article.AboutSpecific section.AboutFavorites,
+  article.AboutSpecific section.AboutHobbiesAndInterests,
+  article.AboutSpecific section.AboutSocialStuff {
+    width: 90%;
+  }
+
+  article.AboutSpecific section.AboutSocialStuff ul.AboutLogo {
+    flex-direction: column;
+  }
+
+  div.PortfolioLayout, div.BlogLayout {
+    flex-direction: column-reverse;
+  }
+
+  aside {
+    width: 100%;
+  }
+
+  aside ul {
+    padding: 10px;
+  }
+
+  article.BlogSpecific, article.PortfolioSpecific {
+    width: 100%;
+  }
+
+  article.PortfolioSpecific div.PortfolioHome {
+    align-items: center;
+    height: auto;
+  }
+
+  article.PortfolioSpecific div.PortfolioHome section {
+    flex-direction: column;
+  }
+
+  article.PortfolioSpecific div.PortfolioHome section h3 {
+    width: 100%;
+  }
+
+  article.PortfolioSpecific div.PortfolioHome section p {
+    padding: 10px;
+  }
+
+  article.BlogSpecific div.BlogHome {
+    align-items: center;
+    height: auto;
+  }
+
+  article.BlogSpecific div.BlogHome section {
+    flex-direction: column;
+  }
+
+  article.BlogSpecific div.BlogHome section h3 {
+    width: 100%;
+  }
+
+  article.BlogSpecific div.BlogHome section p {
+    padding: 10px;
+  }
+
+  article.BlogSpecific div.BlogContent {
+    height: auto;
+  }
 }
