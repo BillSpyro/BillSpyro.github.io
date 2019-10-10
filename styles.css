@@ -144,6 +144,8 @@ article.HomeSpecific section {
   background-color: #97d0d2;
   display: flex;
   flex-direction: column;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
 }
 
 article.HomeSpecific section h3 {
@@ -214,16 +216,18 @@ article.HomeSpecific section div.Ribbon:after {
   top: 70px;
   left: -10px;
   transform: rotate(-140deg);
+  width: 50%;
 }
 
 article.HomeSpecific section div.Ribbon:after {
   left: auto;
   right: -10px;
   transform: rotate(140deg);
+  width: 50%;
 }
 
 article.HomeSpecific section div.Bubble {
-  width: 180px;
+  width: 50%;
   height: 120px;
   background: white;
   position: relative;
@@ -238,7 +242,7 @@ article.HomeSpecific section div.Bubble:before {
   position: absolute;
   right: 100%;
   top: 26px;
-  width: 0;
+  width: 50%;
   height: 0;
   border-top: 20px solid transparent;
   border-right: 40px solid white;
@@ -287,6 +291,7 @@ article.AboutSpecific section.AboutHobbiesAndInterests {
   border: solid 3px #ff0000;
   background-color: #862727;
   border-radius: 14px;
+  box-shadow: 8px 8px 10px 0px black;
 }
 
 article.AboutSpecific section.AboutFavorites {
@@ -296,15 +301,17 @@ article.AboutSpecific section.AboutFavorites {
   border: solid 3px #00ff00;
   background-color: #3fc76f;
   border-radius: 14px;
+  box-shadow: 8px 8px 10px 0px black;
 }
 
 article.AboutSpecific section.AboutPolitics {
-  width: fit-content;
+  width: 40%;;
   margin: 10px;
   padding: 10px;
   border: solid 3px #00b8ff;
   background-color: #3f49c7;
   border-radius: 14px;
+  box-shadow: 8px 8px 10px 0px black;
 }
 
 article.AboutSpecific section.AboutLife {
@@ -314,6 +321,7 @@ article.AboutSpecific section.AboutLife {
   border: solid 3px #ffff00;
   background-color: #b8c73f;
   border-radius: 14px;
+  box-shadow: 8px 8px 10px 0px black;
 }
 
 article.AboutSpecific section.AboutWork {
@@ -323,6 +331,7 @@ article.AboutSpecific section.AboutWork {
   border: solid 3px #ffa500;
   background-color: #c7a33f;
   border-radius: 14px;
+  box-shadow: 8px 8px 10px 0px black;
 }
 
 article.AboutSpecific section.AboutSchool {
@@ -332,6 +341,7 @@ article.AboutSpecific section.AboutSchool {
   border: solid 3px #000000;
   background-color: #2b5a47;
   border-radius: 14px;
+  box-shadow: 8px 8px 10px 0px black;
 }
 
 article.AboutSpecific section.AboutSocialStuff {
@@ -341,6 +351,7 @@ article.AboutSpecific section.AboutSocialStuff {
   border: solid 3px #0000ff;
   background-color: #3fc3c7;
   border-radius: 14px;
+  box-shadow: 8px 8px 10px 0px black;
 }
 
 article.AboutSpecific p.AboutLogoText {
@@ -362,7 +373,7 @@ article.AboutSpecific ul.AboutLogo {
 }
 
 article.AboutSpecific ul.AboutLogo li {
-  margin: 0;
+  margin: 10px 0px;
   padding: 0;
   border: solid 3px #9fd884;
   background-color: #d3ffbe;
@@ -523,6 +534,10 @@ article.PortfolioSpecific div.PortfolioContent section p {
   width: 100%;
 }
 
+article.PortfolioSpecific div.PortfolioContent section iframe {
+  width: 90%;
+}
+
 article.PortfolioSpecific div.PortfolioContent section img {
   border: black solid 1px;
 }
@@ -630,13 +645,24 @@ article.BlogSpecific div.BlogContent section p {
 /*
 Media Queries
 */
-@media screen and (max-width: 900px) {
+@media only screen and (max-width: 600px) {
   header ul.HeaderLinks {
     flex-direction: column;
   }
 
   header ul.HeaderLinks li {
     width: 100%;
+  }
+
+  header img.HeaderLogo {
+    display: block;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+  }
+
+  footer {
+    position: static;
   }
 
   article.HomeSpecific {
@@ -673,7 +699,7 @@ Media Queries
   }
 
   div.PortfolioLayout, div.BlogLayout {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   aside {
@@ -699,6 +725,8 @@ Media Queries
 
   article.PortfolioSpecific div.PortfolioHome section h3 {
     width: 100%;
+    border-bottom: 1px solid black;
+    border-right: none;
   }
 
   article.PortfolioSpecific div.PortfolioHome section p {
@@ -716,6 +744,8 @@ Media Queries
 
   article.BlogSpecific div.BlogHome section h3 {
     width: 100%;
+    border-bottom: 1px solid black;
+    border-right: none;
   }
 
   article.BlogSpecific div.BlogHome section p {
