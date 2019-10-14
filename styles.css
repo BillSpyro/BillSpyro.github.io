@@ -126,7 +126,7 @@ h3.HomeSpecific {
 }
 
 article.HomeSpecific {
-  height: 660px;
+  height: 70vh;
 }
 
 article.HomeSpecific div.HomeThreeColumn {
@@ -134,13 +134,13 @@ article.HomeSpecific div.HomeThreeColumn {
   justify-content: space-around;
   padding: 10px;
   background-image: url(images/Background1.jpg);
-  height: 650px;
+  height: 100%;
 }
 
 article.HomeSpecific section {
   border: black solid 1px;
   width: 30%;
-  height: 350px;
+  height: 40vh;
   background-color: #97d0d2;
   display: flex;
   flex-direction: column;
@@ -191,7 +191,7 @@ article.HomeSpecific section div.MagnifyingGlass:before {
   right: -0.25em;
   bottom: -0.1em;
   border-width: 0;
-  background: #3141f9;
+  background: #3c45af;
   width: 0.35em;
   height: 0.08em;
   transform: rotate(45deg);
@@ -305,7 +305,8 @@ article.AboutSpecific section.AboutFavorites {
 }
 
 article.AboutSpecific section.AboutPolitics {
-  width: 40%;;
+  width: 40%;
+  ;
   margin: 10px;
   padding: 10px;
   border: solid 3px #00b8ff;
@@ -447,8 +448,6 @@ h3.PortfolioSpecific {
   padding: 10px;
 }
 
-article.PortfolioSpecific {}
-
 article.PortfolioSpecific img {
   width: 90%;
   margin: auto;
@@ -458,7 +457,7 @@ article.PortfolioSpecific div.PortfolioHome {
   display: flex;
   flex-direction: column;
   background-image: url(images/Background2.jpg);
-  height: 650px;
+  height: 70vh;
 }
 
 article.PortfolioSpecific div.PortfolioHome section {
@@ -575,7 +574,7 @@ article.BlogSpecific div.BlogHome {
   display: flex;
   flex-direction: column;
   background-image: url(images/Background4.jpg);
-  height: 650px;
+  height: 70vh;
 }
 
 article.BlogSpecific div.BlogHome section {
@@ -617,7 +616,7 @@ article.BlogSpecific div.BlogContent {
   justify-content: center;
   align-items: flex-start;
   background-image: url(images/Background4.jpg);
-  height: 650px;
+  height: 70vh;
 }
 
 article.BlogSpecific div.BlogContent section {
