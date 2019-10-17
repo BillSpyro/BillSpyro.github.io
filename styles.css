@@ -45,19 +45,19 @@ header img.HeaderLogo {
   border-radius: 50px;
   border: 5px solid green;
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 
 header ul.HeaderLinks {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   display: flex;
 }
 
 header ul.HeaderLinks li {
   list-style-type: none;
-  margin: 0px;
+  margin: 0;
   font-size: 25px;
   border: thick double white;
   width: 25%;
@@ -373,7 +373,7 @@ article.AboutSpecific ul.AboutLogo {
 }
 
 article.AboutSpecific ul.AboutLogo li {
-  margin: 10px 0px;
+  margin: 10px 0;
   padding: 0;
   border: solid 3px #9fd884;
   background-color: #d3ffbe;
@@ -630,7 +630,7 @@ article.BlogSpecific div.BlogContent section {
 
 article.BlogSpecific div.BlogContent section h3 {
   width: 100%;
-  margin: 0px;
+  margin: 0;
   padding: 10px;
   text-align: center;
   background-color: #d23c2d;
